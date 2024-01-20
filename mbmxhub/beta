@@ -1,7 +1,9 @@
 --[[
-    my name is minh - minh is me - m1m - mim
-    18/10/2010 - my discord server : https://dsc.gg/m1m-link
-    bio : https://bio.site/m1m
+    script made my minh - or call me by the name you like
+    18/10/2018/ ? VN
+
+    bio : https://bio.site/m1m - my server : https://dsc.gg/m1m-link
+    mbm x hub
 --]]
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/beta.lua"))()

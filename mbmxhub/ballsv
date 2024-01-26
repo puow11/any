@@ -1,9 +1,9 @@
 --[[
     script made my minh - or call me by the name you like
-    18/10/2018/ ? VN
+    18/10/ ? VN
 
     bio : https://bio.site/m1m - my server : https://dsc.gg/m1m-link
-    mbm x hub - blade ball auto parry no ui
+    mbm x hub - blox fruits
 --]]
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/balls"))()

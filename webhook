@@ -23,8 +23,8 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                             ["inline"]= true
                                         },
                                         {
-                                            ["name"]= "status📜",
-                                            ["value"]= "```Using Mbm Hub Main Blox Fruit!!!```",
+                                            ["name"]= "ty for using📜",
+                                            ["value"]= "```Mbm Hub!!!```",
                                             ["inline"]= true
                                         },
                  

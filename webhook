@@ -1,1 +1,239 @@
+game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam","Pirates") 
+local discordLink = 'https://discord.gg/EqhyhgcKzf';
+local uniqueKey = game:HttpGet'https://raw.githubusercontent.com/m1M-Plqer819/dakiiuem/main/ks.txt';
+
+local thescript = [[
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/n3wu1"))()
+]]
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "MbmHubGUI"
+gui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Name = "MainFrame"
+frame.Parent = gui
+frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+frame.Position = UDim2.new(0.5, -150, 0.5, -110)
+frame.Size = UDim2.new(0, 300, 0, 220)
+frame.BorderSizePixel = 0
+frame.Active = true
+frame.Draggable = true
+
+local background = Instance.new("ImageLabel")
+background.Name = "Background"
+background.Parent = frame
+background.BackgroundTransparency = 1
+background.Size = UDim2.new(1.5, 0, 1.5, 0)
+background.Image = "http://www.roblox.com/asset/?id=16162667260"
+
+local title = Instance.new("TextLabel")
+title.Name = "Title"
+title.Parent = frame
+title.BackgroundTransparency = 1
+title.Size = UDim2.new(1, 0, 0, 30)
+title.Position = UDim2.new(0, 0, 0, 10)
+title.Font = Enum.Font.Ubuntu
+title.Text = "Mbm Hub"
+title.TextSize = 24
+title.TextColor3 = Color3.fromRGB(52, 235, 216)
+
+local logo = Instance.new("ImageLabel")
+logo.Name = "Logo"
+logo.Parent = frame
+logo.BackgroundTransparency = 1
+logo.Size = UDim2.new(0.7, 0, 0.7, 0)
+logo.Position = UDim2.new(0.5, 0, 0, 35)
+logo.AnchorPoint = Vector2.new(0.5, 0)
+logo.Image = "http://www.roblox.com/asset/?id=16149561122"
+
+local keyTextBox = Instance.new("KeyCode")
+keyTextBox.Name = "KeyTextBox"
+keyTextBox.Parent = frame
+keyTextBox.Size = UDim2.new(0.7, 0, 0, 30)
+keyTextBox.Position = UDim2.new(0.5, -keyTextBox.Size.X.Offset / 2, 0.95, -35)
+keyTextBox.AnchorPoint = Vector2.new(0.5, 1)
+keyTextBox.PlaceholderText = "Digite a chave"
+keyTextBox.Font = Enum.Font.Ubuntu
+keyTextBox.TextSize = 18
+keyTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+keyTextBox.BackgroundTransparency = 0.8
+
+local buttonContainer = Instance.new("Frame")
+buttonContainer.Name = "ButtonContainer"
+buttonContainer.Parent = frame
+buttonContainer.Size = UDim2.new(0.7, 0, 0, 30)
+buttonContainer.Position = UDim2.new(0.5, -buttonContainer.Size.X.Offset / 2, 0.95, -3)
+buttonContainer.AnchorPoint = Vector2.new(0.5, 1)
+buttonContainer.BackgroundTransparency = 1
+
+local function createButton(name, position, text)
+    local button = Instance.new("TextButton")
+    button.Name = name
+    button.Parent = buttonContainer
+    button.Size = UDim2.new(0.3, 0, 0, 30)
+    button.Position = position
+    button.Font = Enum.Font.Ubuntu
+    button.Text = text
+    button.TextSize = 18
+    button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    button.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+    button.BackgroundTransparency = 0.9
+    button.BorderSizePixel = 0
+    return button
+end
+
+
+local loginButton = createButton("LoginButton", UDim2.new(0, 0, 0, 0), "Login")
+local buyKeyButton = createButton("BuyKeyButton", UDim2.new(0.5, 0, 0, 0), "buy key")
+
+getKeyButton.MouseButton1Click:Connect(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Mbm Hub",
+        Text = "https://discord.gg/s6yydxTy8f",
+        Duration = 4
+    })
+    setclipboard(key)
+end)
+
+loginButton.MouseButton1Click:Connect(function()
+    local enteredKey = keyTextBox.Text
+
+    if enteredKey == uniqueKey then
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Mbm Hub",
+            Text = "wait script...",
+            Duration = 4
+        })
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/any/main/mbmxhub/n3wu1"))()
+        gui:Destroy()
+    else
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Mbm Hub",
+            Text = "have fun",
+            Duration = 4
+        })
+    end
+end)
+
+buyKeyButton.MouseButton1Click:Connect(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Mbm Hub",
+        Text = "w",
+        Duration = 4
+    })
+    setclipboard(discordLink)
+end)
+
+---Close UI
+local ScreenGui = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ImageButton.Parent = ScreenGui
+
+ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
+ImageButton.Size = UDim2.new(0.0627121851, 0, 0.107579626, 0)
+ImageButton.Image = "rbxassetid://16162667260"
+
+UICorner.CornerRadius = UDim.new(0, 30)
+UICorner.Parent = ImageButton
+
+
+UIGradient.Parent = ImageButton
+
+UIAspectRatioConstraint.Parent = ImageButton
+UIAspectRatioConstraint.AspectRatio = 0.988
+
+
+local function HCEGY_fake_script()
+	local script = Instance.new('LocalScript', UIGradient)
+
+	local TweenService = game:GetService("TweenService")
+	local tweeninfo = TweenInfo.new(4, Enum.EasingStyle.Linear, Enum.EasingDirection.In, -1)
+	local tween = TweenService:Create(script.Parent, tweeninfo, {Rotation = 360})
+	tween:Play()
+end
+coroutine.wrap(HCEGY_fake_script)()
+local function YTZCAJC_fake_script()
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
+	end)
+end
+coroutine.wrap(YTZCAJC_fake_script)()
+spawn(function()
+while wait() do
+if _G.ChestBypass then
+pcall(function()
+for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+  if string.find(v.Name, "Chest") then
+      print(v.Name)
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+      wait(.15)
+  end
+end
+game.Players.LocalPlayer.Character.Head:Destroy()
+for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+if string.find(v.Name, "Chest") and v:IsA("TouchTransmitter") then
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
+wait()
+firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
+end
+end
+end)
+end
+end
+end)
+
+spawn(function()
+while task.wait() do
+if _G.ChestBypass then
+    local ohString1 = "SetTeam"
+    local ohString2 = "Pirates"
+    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(ohString1, ohString2)
+ end
+end
+end)
 

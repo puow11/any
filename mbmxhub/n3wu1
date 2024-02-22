@@ -6,4 +6,5 @@
     mbm x hub - blox fruits
 --]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/m1M-Plqer819/skiddu/main/mbmxhub/n3wu1test.lua"))();
+game.Players.LocalPlayer:Kick("Join my discord to get new script (https://dsc.gg/m1m)")
+setclipboard("https://dsc.gg/m1m")
